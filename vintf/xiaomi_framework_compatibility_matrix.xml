@@ -4,6 +4,14 @@
 -->
 <compatibility-matrix version="1.0" type="framework">
     <hal format="hidl" optional="true">
+        <name>android.hardware.media.c2</name>
+        <version>1.0</version>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>dolby</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>com.fingerprints.extension</name>
         <version>1.0</version>
         <version>2.0</version>
@@ -61,6 +69,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+         <name>vendor.dolby.hardware.dms</name>
+         <version>2.0</version>
+         <interface>
+             <name>IDms</name>
+             <instance>default</instance>
+         </interface>
+     </hal>    
     <hal format="hidl" optional="true">
         <name>vendor.goodix.hardware.biometrics.fingerprint</name>
         <version>2.1</version>
@@ -320,6 +336,15 @@
     <hal format="aidl" optional="true">
         <name>vendor.xiaomi.hw.touchfeature</name>
         <version>1</version>
+        <interface>
+            <name>ITouchFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hw.touchfeature</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
         <interface>
             <name>ITouchFeature</name>
             <instance>default</instance>
